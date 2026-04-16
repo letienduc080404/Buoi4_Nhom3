@@ -1,0 +1,15 @@
+/*
+ * it.c
+ *
+ *  Created on: Apr 16, 2026
+ *      Author: DELL
+ */
+#include "stm32f4xx_hal.h"
+
+void SysTick_Handler (void)
+{
+	HAL_IncTick();
+	HAL_SYSTICK_IRQHandler();
+
+}
+
